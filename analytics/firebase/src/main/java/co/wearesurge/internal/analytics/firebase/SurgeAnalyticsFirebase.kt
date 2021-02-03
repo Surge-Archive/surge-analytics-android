@@ -24,6 +24,8 @@ class SurgeAnalyticsFirebase : SurgeAnalytics {
     private fun Event.getFirebaseEventId() = when (this) {
         is Event.AppOpen -> FirebaseAnalytics.Event.APP_OPEN
         is Event.AddToBasket -> FirebaseAnalytics.Event.ADD_TO_CART
+        is Event.ScreenView -> FirebaseAnalytics.Event.SCREEN_VIEW
+        is Event.Login -> FirebaseAnalytics.Event.LOGIN
         is Event.CustomEvent -> this.id
     }
 }
