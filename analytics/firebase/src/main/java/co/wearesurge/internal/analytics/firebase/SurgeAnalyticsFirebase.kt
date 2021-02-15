@@ -25,6 +25,7 @@ class SurgeAnalyticsFirebase : SurgeAnalytics {
         is Event.AppOpen -> FirebaseAnalytics.Event.APP_OPEN
         is Event.AddToBasket -> FirebaseAnalytics.Event.ADD_TO_CART
         is Event.ScreenView -> FirebaseAnalytics.Event.SCREEN_VIEW
+        is Event.SignUp -> FirebaseAnalytics.Event.SIGN_UP
         is Event.Login -> FirebaseAnalytics.Event.LOGIN
         is Event.CustomEvent -> this.id
     }
