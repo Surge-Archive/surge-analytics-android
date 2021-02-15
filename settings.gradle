@@ -1,5 +1,4 @@
 include ':analytics:core'
 include ':analytics:firebase'
-include ':core'
 include ':app'
 rootProject.name = "Surge Analytics"
