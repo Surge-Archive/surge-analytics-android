@@ -18,6 +18,24 @@ sealed class Event {
         override val id: String = "add_to_basket"
     }
 
+    data class ScreenView(
+        override val params: Bundle? = null
+    ) : Event() {
+        override val id: String = "screen_view"
+    }
+
+    data class SignUp(
+        override val params: Bundle? = null
+    ) : Event() {
+        override val id: String = "sign_up"
+    }
+
+    data class Login(
+        override val params: Bundle? = null
+    ) : Event() {
+        override val id: String = "login"
+    }
+
     // TODO Add other common events
 
     data class CustomEvent(
